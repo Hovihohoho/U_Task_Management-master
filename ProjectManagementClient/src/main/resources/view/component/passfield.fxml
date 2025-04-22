@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="580.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtEmail" prefHeight="40.0" promptText="Enter your password">
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField prefHeight="40.0" promptText="Enter your password">
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="Label" textAlignment="CENTER" StackPane.alignment="CENTER_RIGHT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</StackPane>

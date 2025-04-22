@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.layout.ProjectDetailController">
+    <left>
+        <BorderPane prefHeight="200.0" style="-fx-background-color: #333;" BorderPane.alignment="CENTER">
+            <center>
+                <VBox alignment="TOP_CENTER" prefHeight="200.0" spacing="5.0" styleClass="nav" stylesheets="@../../public/style/scene/mainlayout.css" BorderPane.alignment="CENTER">
+                    <children>
+                  <Button fx:id="menuDashboard" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onChangeScene" style="-fx-background-color: #333;">
+                     <graphic>
+                        <BorderPane id="dashboard" prefHeight="80.0" prefWidth="80.0" styleClass="nav_item" stylesheets="@../../public/style/scene/mainlayout.css">
+                           <center>
+                              <Label id="dashboard_icon" prefHeight="40.0" prefWidth="40.0" styleClass="icon" BorderPane.alignment="CENTER">
+                                 <stylesheets>
+                                    <URL value="@../../public/style/common/icon.css" />
+                                    <URL value="@../../public/style/scene/mainlayout.css" />
+                                 </stylesheets>
+                              </Label>
+                           </center>
+                           <bottom>
+                              <Label text="Dashboard" textFill="WHITE" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </BorderPane>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="menuIssue" mnemonicParsing="false" onMouseClicked="#onChangeScene" style="-fx-background-color: #333;">
+                     <graphic>
+                              <BorderPane id="issue" prefHeight="80.0" prefWidth="80.0" styleClass="nav_item" stylesheets="@../../public/style/scene/mainlayout.css">
+                                  <center>
+                                      <Label id="issue_icon" prefHeight="40.0" prefWidth="40.0" styleClass="icon" BorderPane.alignment="CENTER">
+                                          <stylesheets>
+                                              <URL value="@../../public/style/common/icon.css" />
+                                              <URL value="@../../public/style/scene/mainlayout.css" />
+                                          </stylesheets>
+                                      </Label>
+                                  </center>
+                                  <bottom>
+                                      <Label text="Issue" textFill="WHITE" BorderPane.alignment="CENTER" />
+                                  </bottom>
+                                  <cursor>
+                                      <Cursor fx:constant="HAND" />
+                                  </cursor>
+                              </BorderPane>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="menuMember" mnemonicParsing="false" onMouseClicked="#onChangeScene" style="-fx-background-color: #333;">
+                     <graphic>
+                              <BorderPane id="member" prefHeight="80.0" prefWidth="80.0" styleClass="nav_item" stylesheets="@../../public/style/scene/mainlayout.css">
+                                  <center>
+                                      <Label id="member_icon" prefHeight="40.0" prefWidth="40.0" styleClass="icon" BorderPane.alignment="CENTER">
+                                          <stylesheets>
+                                              <URL value="@../../public/style/common/icon.css" />
+                                              <URL value="@../../public/style/scene/mainlayout.css" />
+                                          </stylesheets>
+                                      </Label>
+                                  </center>
+                                  <bottom>
+                                      <Label text="Member" textFill="WHITE" BorderPane.alignment="CENTER" />
+                                  </bottom>
+                                  <cursor>
+                                      <Cursor fx:constant="HAND" />
+                                  </cursor>
+                              </BorderPane>
+                     </graphic>
+                  </Button>
+                    </children>
+                    <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                    </padding>
+                </VBox>
+            </center>
+            <bottom>
+                <VBox alignment="BOTTOM_CENTER" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                  <Button fx:id="menuSetting" mnemonicParsing="false" onMouseClicked="#onChangeScene" style="-fx-background-color: #333;">
+                     <graphic>
+                              <BorderPane id="setting" prefHeight="80.0" prefWidth="80.0" styleClass="nav_item" stylesheets="@../../public/style/scene/mainlayout.css">
+                                  <center>
+                                      <Label id="setting_icon" prefHeight="40.0" prefWidth="40.0" styleClass="icon" BorderPane.alignment="CENTER">
+                                          <stylesheets>
+                                              <URL value="@../../public/style/common/icon.css" />
+                                              <URL value="@../../public/style/scene/mainlayout.css" />
+                                          </stylesheets>
+                                      </Label>
+                                  </center>
+                                  <bottom>
+                                      <Label text="Setting" textFill="WHITE" BorderPane.alignment="CENTER" />
+                                  </bottom>
+                                  <cursor>
+                                      <Cursor fx:constant="HAND" />
+                                  </cursor>
+                              </BorderPane>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="menuPersonal" mnemonicParsing="false" onMouseClicked="#onChangeScene" style="-fx-background-color: #333;">
+                     <graphic>
+                              <BorderPane id="profile" prefHeight="80.0" prefWidth="80.0" styleClass="nav_item" stylesheets="@../../public/style/scene/mainlayout.css">
+                                  <center>
+                                      <Label id="profile_icon" prefHeight="40.0" prefWidth="40.0" styleClass="icon" BorderPane.alignment="CENTER">
+                                          <stylesheets>
+                                              <URL value="@../../public/style/common/icon.css" />
+                                              <URL value="@../../public/style/scene/mainlayout.css" />
+                                          </stylesheets>
+                                      </Label>
+                                  </center>
+                                  <cursor>
+                                      <Cursor fx:constant="HAND" />
+                                  </cursor>
+                              </BorderPane>
+                     </graphic>
+                  </Button>
+                    </children>
+                    <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                    </padding>
+                </VBox>
+            </bottom>
+        </BorderPane>
+    </left>
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <bottom>
+                <BorderPane prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <right>
+                        <ProgressBar prefHeight="15.0" prefWidth="250.0" progress="0.0" BorderPane.alignment="CENTER" />
+                    </right>
+                    <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                    </padding>
+                </BorderPane>
+            </bottom>
+            <center>
+                <BorderPane fx:id="contentLayout" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </BorderPane>
+            </center>
+            <top>
+                <BorderPane style="-fx-border-width: 0 0 1 0; -fx-border-color: #999;" BorderPane.alignment="CENTER">
+                    <left>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" stylesheets="@../../public/style/common/controll.css" text="Back" BorderPane.alignment="CENTER">
+                            <graphic>
+                                <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" stylesheets="@../../public/style/common/icon.css">
+                                    <styleClass>
+                                        <String fx:value="icon" />
+                                        <String fx:value="back" />
+                                    </styleClass>
+                                </Label>
+                            </graphic>
+                        </Button>
+                    </left>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </BorderPane>
+            </top>
+        </BorderPane>
+    </center>
+</BorderPane>

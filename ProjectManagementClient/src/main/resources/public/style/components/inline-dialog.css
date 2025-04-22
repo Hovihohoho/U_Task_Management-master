@@ -1,0 +1,40 @@
+    /* inline-dialog.css */
+
+    /* Màu cho thông báo warning */
+    .warning {
+        -fx-background-color: #ffd438;
+    }
+
+    .warning .label {
+        -fx-text-fill: white;
+    }
+
+    .warning .text-area {
+        -fx-background-color: #fff3cd;
+    }
+
+    /* Màu cho thông báo success */
+    .success {
+        -fx-background-color: #28a745;
+    }
+
+    .success .label {
+        -fx-text-fill: white;
+    }
+
+    .success .text-area {
+        -fx-background-color: #d4edda;
+    }
+
+    /* Màu cho thông báo error */
+    .error {
+        -fx-background-color: #dc3545;
+    }
+
+    .error .label {
+        -fx-text-fill: white;
+    }
+
+    .error .text-area {
+        -fx-background-color: #f8d7da;
+    }

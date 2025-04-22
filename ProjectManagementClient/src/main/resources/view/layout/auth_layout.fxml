@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1200.0"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.scene.AuthLayoutController">
+    <children>
+        <BorderPane id="auth_wallpaper" prefHeight="200.0" prefWidth="200.0"
+                    stylesheets="@../../public/style/scene/auth.css" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <BorderPane BorderPane.alignment="CENTER">
+                    <center>
+                        <StackPane fx:id="navAuthScreen" prefHeight="150.0" prefWidth="200.0"/>
+                    </center>
+                    <bottom>
+                        <Label alignment="TOP_CENTER" minHeight="50.0" prefHeight="50.0"
+                               text="\@Copyright by MasterNode" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                    </bottom>
+                </BorderPane>
+            </center>
+            <left>
+                <Pane id="auth_background" prefWidth="600.0" stylesheets="@../../public/style/scene/auth.css">
+                    <BorderPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </BorderPane.margin>
+                </Pane>
+            </left>
+        </BorderPane>
+    </children>
+</AnchorPane>

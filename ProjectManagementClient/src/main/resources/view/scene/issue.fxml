@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <BorderPane prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER_LEFT">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="New Issue">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <TextField prefHeight="40.0" prefWidth="200.0" promptText="Nhập issue muốn tìm ..." />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ComboBox prefHeight="40.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <right>
+            <BorderPane prefHeight="200.0" prefWidth="350.0" styleClass="label_container" BorderPane.alignment="CENTER">
+               <top>
+                  <BorderPane prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <right>
+                        <Label prefHeight="40.0" prefWidth="40.0" stylesheets="@../../public/style/common/icon.css" BorderPane.alignment="CENTER">
+                           <styleClass>
+                              <String fx:value="icon" />
+                              <String fx:value="plus" />
+                           </styleClass>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </right>
+                     <center>
+                        <HBox prefWidth="200.0" BorderPane.alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="40.0" text="Labels">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </center>
+                  </BorderPane>
+               </top>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </padding>
+               <center>
+                  <ListView prefHeight="200.0" prefWidth="200.0" stylesheets="@../../public/style/common/data.css" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </right>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <TableView prefHeight="200.0" prefWidth="200.0" stylesheets="@../../public/style/common/data.css" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="No" />
+                      <TableColumn prefWidth="75.0" text="Name" />
+                        <TableColumn minWidth="50.0" prefWidth="75.0" text="Status" />
+                    </columns>
+                  </TableView>
+               </center>
+               <bottom>
+                  <Pagination prefWidth="750.0" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </center>
+   <stylesheets>
+      <URL value="@../../public/style/scene/issue.css" />
+      <URL value="@../../public/style/common/root.css" />
+   </stylesheets>
+</BorderPane>

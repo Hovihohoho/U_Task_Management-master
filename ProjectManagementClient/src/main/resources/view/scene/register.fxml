@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="750.0" minWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.scene.RegisterScreenController">
+    <center>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="600.0">
+            <children>
+            <BorderPane>
+               <center>
+                  <VBox>
+                     <children>
+                            <Label text="Create your account">
+                                <font>
+                                    <Font name="System Bold" size="40.0" />
+                                </font>
+                            </Label>
+                            <Label styleClass="description" stylesheets="@../../public/style/scene/auth.css" text="The ultimate tool for managing project issues. Register now to track, organize, and resolve issues effortlessly." wrapText="true">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <BorderPane prefHeight="100.0" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+                <TextField prefHeight="40.0" promptText="Enter your username">
+                    <VBox.margin>
+                        <Insets top="80.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField prefHeight="40.0" promptText="Enter your email (Ex: john@gmail.com)">
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </TextField>
+                <PasswordField prefHeight="40.0" promptText="Enter your password">
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <PasswordField prefHeight="40.0" promptText="Confirm password">
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="30.0" top="15.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </PasswordField>
+                <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#handleRegister" prefHeight="40.0" prefWidth="580.0" styleClass="submit_button" stylesheets="@../../public/style/scene/auth.css" text="Register">
+                    <VBox.margin>
+                        <Insets top="60.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <HBox alignment="CENTER" spacing="5.0">
+                    <children>
+                        <Label text="Have an account?">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label onMouseClicked="#onChangeToLoginScreen" styleClass="label_button" stylesheets="@../../public/style/scene/auth.css" text="Login">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>

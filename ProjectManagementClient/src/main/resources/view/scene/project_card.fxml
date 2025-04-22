@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+
+<BorderPane fx:id="projectCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" styleClass="card" stylesheets="@../../public/style/common/container.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <BorderPane prefHeight="40.0" BorderPane.alignment="CENTER">
+            <left>
+                <Label fx:id="projectNameLabel" styleClass="card-title" text="Tên dự án" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+            </left>
+            <right>
+                <Label fx:id="statusLabel" styleClass="status-badge" text="Đang hoạt động" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+    </top>
+    <center>
+        <VBox spacing="8.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="projectDescriptionLabel" styleClass="card-description" text="Mô tả dự án" wrapText="true" />
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label text="Bắt đầu:" />
+                        <Label fx:id="startDateLabel" text="01/01/2025" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label text="Kết thúc:" />
+                        <Label fx:id="endDateLabel" text="31/12/2025" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label text="Thành viên:" />
+                        <Label fx:id="memberCountLabel" text="5" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="viewProjectBtn" mnemonicParsing="false" styleClass="btn-primary" stylesheets="@../../public/style/common/controll.css" text="Xem">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="editProjectBtn" mnemonicParsing="false" styleClass="btn-secondary" stylesheets="@../../public/style/common/controll.css" text="Sửa">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+    <padding>
+        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+    </padding>
+</BorderPane>

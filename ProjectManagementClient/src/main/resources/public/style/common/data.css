@@ -1,0 +1,127 @@
+.table-view {
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-border-color: -fx-color-surface-a20;
+    -fx-background-radius: 0;
+    -fx-background-color: -fx-color-surface-a20;
+    -fx-table-cell-border-color: -fx-color-surface-a20;
+}
+
+.table-view:focused {
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-border-color: -fx-color-surface-a20;
+    -fx-background-insets: 1;
+    -fx-background-radius: 0;
+    -fx-background-color: -fx-color-surface-a20;
+}
+
+.table-view .column-header-background {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -fx-color-surface-a20;
+    -fx-background-radius: 0;
+    -fx-background-color: -fx-color-surface-a20;
+    -fx-text-fill: #000000;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: -fx-color-surface-a20;
+}
+
+.table-view .column-resize-line {
+    -fx-background-color: -fx-color-surface-a20;
+    -fx-pref-width: 1;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-color-surface-a20;
+    -fx-text-background-color: #ffffff;
+    -fx-margin: 1;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -fx-color-surface-a30;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.table-row-cell:selected {
+    -fx-table-cell-border-color: -fx-color-surface-a40;
+    -fx-background-color: -fx-color-surface-a40;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.table-row-cell:pressed {
+    -fx-background-color: -fx-color-surface-a40;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.table-view .column-header .label {
+    -fx-alignment: center-left;
+    -fx-cursor: HAND;
+}
+
+.table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-drag-header {
+    -fx-background-color: -fx-color-surface-a20;
+}
+
+
+
+
+.list-cell {
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-text-fill: #000000;
+    -fx-background-color: -fx-color-surface-a0;
+    -fx-padding: 0 0 0 3;
+}
+
+.list-cell:hover {
+    -fx-background-color: -fx-color-surface-a0;
+    -fx-cursor: HAND;
+}
+
+.list-cell:pressed {
+    -fx-background-color: -fx-color-surface-a0;
+}
+
+.list-cell:selected {
+    -fx-background-color: -fx-color-surface-a0;
+}
+
+
+/* ListView */
+.list-view {
+    -fx-background-radius: 0;
+    -fx-background-color: -fx-color-surface-a20;
+    -fx-border-width: 1;
+    -fx-padding: 1;
+}
+
+.list-view .scroll-bar {
+    -fx-background-insets: 0 -1 0 0;
+}
+
+.list-view .scroll-bar .thumb {
+    -fx-background-insets: 0 3 0 2;
+}
+
+.list-view:hover {
+    -fx-border-color: -fx-color-surface-a20;
+    -fx-padding: 0;
+    -fx-background-insets: 1 1 0 1;
+}
+
+.list-view:focused {
+    -fx-background-color: -fx-color-surface-a20;
+    -fx-border-color: -fx-color-surface-a0;
+    -fx-padding: 0 0 1 0;
+    -fx-background-insets: 1;
+}

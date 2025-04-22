@@ -1,0 +1,49 @@
+plugins {
+    id 'application'
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+group 'iuh.fit'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = '21' // Change to a valid version
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics'] // Added graphics module
+}
+
+application {
+    mainClass = 'App' // Make sure this is the correct main class path
+}
+
+dependencies {
+    implementation('org.hibernate:hibernate-core:7.0.0.Beta1')
+    implementation('org.glassfish.jaxb:jaxb-runtime:4.0.5')
+    // Remove these as they're handled by the JavaFX plugin
+    // implementation('org.openjfx:javafx-controls:23.0.1')
+    // implementation("org.openjfx:javafx-fxml:23.0.1")
+    compileOnly('org.projectlombok:lombok:1.18.36')
+    annotationProcessor('org.projectlombok:lombok:1.18.36')
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.11.0")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// This run task configuration may be redundant with the JavaFX plugin
+// but we'll keep it with modifications
+run {
+    doFirst {
+        jvmArgs = [
+                '--module-path', classpath.asPath,
+                '--add-modules', 'javafx.controls,javafx.fxml,javafx.graphics'
+        ]
+    }
+}

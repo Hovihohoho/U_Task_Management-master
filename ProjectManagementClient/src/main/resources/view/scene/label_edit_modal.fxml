@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="editLabelModal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" styleClass="modal" stylesheets="@../../public/style/common/container.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <BorderPane prefHeight="60.0" styleClass="modal-header" BorderPane.alignment="CENTER">
+            <center>
+                <Label text="Chỉnh sửa nhãn" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+            </center>
+            <right>
+                <Button fx:id="closeModalBtn" mnemonicParsing="false" styleClass="btn-close" stylesheets="@../../public/style/common/controll.css" BorderPane.alignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </right>
+            <padding>
+                <Insets left="16.0" right="16.0" />
+            </padding>
+        </BorderPane>
+    </top>
+    <center>
+        <VBox spacing="16.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox spacing="6.0">
+                    <children>
+                        <Label text="Tên nhãn *">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="labelNameField" prefHeight="40.0" promptText="Nhập tên nhãn" stylesheets="@../../public/style/common/input.css" />
+                    </children>
+                </VBox>
+                <VBox spacing="6.0">
+                    <children>
+                        <Label text="Mô tả">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextArea fx:id="labelDescriptionField" prefHeight="80.0" promptText="Nhập mô tả nhãn" stylesheets="@../../public/style/common/input.css" wrapText="true" />
+                    </children>
+                </VBox>
+                <VBox spacing="6.0">
+                    <children>
+                        <Label text="Màu sắc *">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <ColorPicker fx:id="labelColorPicker" prefHeight="40.0" prefWidth="150.0" stylesheets="@../../public/style/common/input.css">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ColorPicker>
+                    </children>
+                </VBox>
+                <Label fx:id="projectInfoLabel" text="Thuộc dự án: Tên dự án">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+            </padding>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="16.0" styleClass="modal-footer" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="deleteLabelBtn" mnemonicParsing="false" styleClass="btn-danger" stylesheets="@../../public/style/common/controll.css" text="Xóa nhãn">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="cancelBtn" mnemonicParsing="false" styleClass="btn-secondary" stylesheets="@../../public/style/common/controll.css" text="Hủy">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="saveLabelBtn" mnemonicParsing="false" styleClass="btn-primary" stylesheets="@../../public/style/common/controll.css" text="Lưu thay đổi">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+            </padding>
+        </HBox>
+    </bottom>
+</BorderPane>

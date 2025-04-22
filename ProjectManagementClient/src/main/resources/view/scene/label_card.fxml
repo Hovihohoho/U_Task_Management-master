@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="labelCard" maxHeight="-Infinity" maxWidth="400.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" styleClass="label-card" stylesheets="@../../public/style/common/container.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <left>
+        <Circle fx:id="labelColorCircle" fill="DODGERBLUE" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets right="10.0" />
+            </BorderPane.margin>
+        </Circle>
+    </left>
+    <center>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="labelNameLabel" text="Tên nhãn">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelDescriptionLabel" text="Mô tả của nhãn" wrapText="true" />
+            </children>
+        </VBox>
+    </center>
+    <right>
+        <HBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="editLabelBtn" mnemonicParsing="false" styleClass="btn-icon" stylesheets="@../../public/style/common/controll.css" text="✏️">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="deleteLabelBtn" mnemonicParsing="false" styleClass="btn-icon" stylesheets="@../../public/style/common/controll.css" text="🗑️">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </HBox>
+    </right>
+</BorderPane>

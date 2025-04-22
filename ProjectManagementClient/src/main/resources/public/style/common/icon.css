@@ -1,0 +1,37 @@
+.icon {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+.search {
+    -fx-background-image:  url("../../icon/basil--search-solid.png");
+}
+
+.filter {
+    -fx-background-image:  url("../../icon/cuida--filter-outline.png");
+}
+
+.more {
+    -fx-background-image:  url("../../icon/white_lsicon--more-outline.png");
+}
+
+.plus {
+    -fx-background-image:  url("../../icon/ic--round-plus.png");
+}
+
+.back {
+    -fx-background-image:  url("../../icon/eva--arrow-ios-back-fill.png");
+}
+
+.attachment {
+    -fx-background-image:  url("../../icon/blue_mi--attachment.png");
+}
+
+.send {
+    -fx-background-image:  url("../../icon/mingcute--send-fill.png");
+}
+
+.discussion {
+    -fx-background-image:  url("../../icon/octicon--comment-discussion-24.png");
+}

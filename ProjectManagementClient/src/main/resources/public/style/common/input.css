@@ -1,0 +1,16 @@
+.text-field {
+    -fx-background-radius: 0;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: '#333';
+    -fx-background-color: '#fff';
+    -fx-text-fill: #000000;
+    -fx-highlight-fill: -fx-color-surface-mixed-a50;
+}
+
+.text-field:hover {
+    -fx-border-color: '#A3A3A3';
+}
+
+.text-field:focused {
+    -fx-border-color: '#1DCD9F';
+}

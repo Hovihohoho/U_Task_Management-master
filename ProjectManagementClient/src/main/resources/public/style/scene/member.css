@@ -1,0 +1,6 @@
+.member_background {
+    -fx-background-image: url('../../image/project_info_background.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}

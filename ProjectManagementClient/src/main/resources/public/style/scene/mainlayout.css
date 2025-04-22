@@ -1,0 +1,47 @@
+.nav_item:hover {
+    -fx-background-color: '#555';
+}
+
+#dashboard > #dashboard_icon {
+    -fx-background-image:  url("../../icon/ix--project.png");
+}
+
+#dashboard:hover > #dashboard_icon {
+    -fx-background-image:  url("../../icon/a_ix--project.png");
+}
+
+#issue > #issue_icon {
+    -fx-background-image:  url("../../icon/octicon--issue-opened-16.png");
+}
+
+#issue:hover > #issue_icon {
+    -fx-background-image:  url("../../icon/a_octicon--issue-opened-16.png");
+}
+
+#member > #member_icon {
+    -fx-background-image:  url("../../icon/tdesign--member.png");
+}
+
+#member:hover > #member_icon {
+    -fx-background-image:  url("../../icon/a_tdesign--member.png");
+}
+
+#setting > #setting_icon {
+    -fx-background-image:  url("../../icon/lets-icons--setting-alt-fill.png");
+}
+
+#setting:hover > #setting_icon {
+    -fx-background-image:  url("../../icon/a_lets-icons--setting-alt-fill.png");
+}
+
+#profile > #profile_icon {
+    -fx-background-image:  url("../../icon/iconamoon--profile-circle-fill.png");
+}
+
+#profile:hover > #profile_icon {
+    -fx-background-image:  url("../../icon/a_iconamoon--profile-circle-fill.png");
+}
+
+.nav > .button {
+
+}
